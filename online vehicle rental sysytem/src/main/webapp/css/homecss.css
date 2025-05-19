@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+  .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+            
+ 
+        }
+        
+:root {
+    --primary-color: #1a1919;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f0eeee;
+
+   
+    --site-max-width: 1300px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.section_container {
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+.section_title {
+    text-align: center;
+    padding: 60px 0 100px;
+    font-size: 32px;
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+}
+
+.section_title::after {
+    content: '';
+    width: 80px;
+    background: var(--secondary-color);
+    height: 5px;
+    display: block;
+    margin: 7px auto 0;
+    border-radius: 8px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    padding: 15px 0 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+nav .nav_logo a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav .nav_logo a img {
+    max-width: 55px;
+}
+
+nav .nav_logo h2 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+    
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 150%; 
+    background-color: #b0010129;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    }
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav label {
+    font-size: 32px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+label .menu_btn,
+label .close_btn {
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+
+.hero_section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero_container {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    align-items: center;
+    padding-top: 85px;
+    min-height: calc(100vh - 85px);
+    justify-content: space-between;
+}
+
+.hero_container .text_section h2 {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.hero_container .text_section h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 8px;
+}
+
+.hero_container .text_section p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white-color);
+    margin: 24px 0 40px;
+    max-width: 70%;
+}
+
+.hero_container .hero_section_button {
+    display: flex;
+    gap: 24px;
+}
+
+.hero_container .hero_section_button .button {
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.hero_container .hero_section_button .button:last-child {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: none;
+}
+
+.hero_container .hero_section_button .button:first-child:hover {
+    color: var(--white-color);
+    background: transparent;
+    border-color: var(--white-color);
+}
+
+.hero_container .hero_section_button .button:last-child:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.hero_container .image_section {
+    max-width: 45%;
+
+}
+ 
+
+.hero_container .image_section img {
+    width: 100%;
+}

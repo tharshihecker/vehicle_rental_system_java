@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    margin: -20px;
+    padding: 10px;
+    width: 120%; 
+    font-family: Arial, sans-serif;
+    background: url(https://wallpapercave.com/wp/wp11965297.jpg) fixed no-repeat;
+    background-size: cover;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Container styling */
+#container {
+    width: 40%; /* Adjust width to fit better */
+    padding: 20px;
+    margin: 50px 0 50px 30px; /* Adjust margin to align it to the left */
+    background-color: rgba(255, 255, 255, 0.5); /* Make the background partially transparent */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for better contrast */
+    backdrop-filter: blur(10px); /* Apply a slight blur effect for modern look */
+}
+
+/* Form heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Keep text solid */
+}
+
+/* Form element styling */
+form {
+    width: 100%;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333; /* Ensure labels remain readable */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%; /* Adjusted width to fit the container */
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #fff; /* Keep input fields opaque */
+    color: #333; /* Text inside input fields should remain solid */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 12px 24px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Error message styling */
+#errors {
+    margin-bottom: 20px;
+    background-color: rgba(255, 230, 230, 0.8); /* Light red background with transparency */
+    padding: 10px;
+    border: 1px solid #f00;
+    border-radius: 3px;
+}
+
+/* Error message list */
+#errors ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Error list item styling */
+#errors li {
+    list-style-type: none;
+    color: #f00;
+    font-size: 18px;
+}
+
+/* General text alignment for additional elements */
+.center {
+    text-align: center;
+}
+
+.center p {
+    font-size: 16px;
+    color: #333;
+}
+
+.center a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.center a:hover {
+    text-decoration: underline;
+}

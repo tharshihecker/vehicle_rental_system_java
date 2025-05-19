@@ -1,0 +1,89 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 10px; /* Changed padding value to 'px' */
+    font-family: Arial, sans-serif;
+    background: url(https://wallpapercave.com/wp/wp11965297.jpg) fixed no-repeat;
+    background-size: cover;
+    background-color: #b0c4de;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Input field styling */
+input[type="password"],
+input[type="email"],
+select {
+    width: 80%; /* Changed width to 80% for better alignment */
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Container styling */
+#container {
+    width: 30%; /* Reduced width to avoid covering the people */
+    height: 70%;
+    margin: 50px 0 50px 100px; /* Shifted the container to the left */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Changed background to partially transparent */
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Increased shadow intensity for contrast */
+    backdrop-filter: blur(10px); /* Added blur for a modern look */
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 12px 24px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Error message styling */
+#errors {
+    margin-bottom: 20px;
+    background-color: rgba(255, 230, 230, 0.8); /* Made the background partially transparent */
+    padding: 10px;
+    border: 1px solid #f00;
+    border-radius: 3px;
+}
+
+/* Error message list */
+#errors ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Error list item styling */
+#errors li {
+    list-style-type: none;
+    color: #f00;
+    font-size: 18px;
+}

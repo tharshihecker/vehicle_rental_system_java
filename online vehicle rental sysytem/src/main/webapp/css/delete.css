@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background: url(https://wallpapercave.com/wp/wp11965297.jpg) fixed no-repeat;
+    background-position: left top; /* Align background image to the left */
+    background-size: cover;
+    background-color: #b0c4de;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Container styling */
+.container {
+    width: 30%;
+    margin: 50px 0 50px 100px; /* Align container towards the left */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Adds blur for a modern look */
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button styling for both actions */
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #f44336; /* Red for delete */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Button for going back (No option) */
+.go-back {
+    background-color: #008CBA; /* Blue for 'Go Back' */
+}
+
+/* Hover effect for 'Go Back' button */
+.go-back:hover {
+    background-color: #007bb5;
+}

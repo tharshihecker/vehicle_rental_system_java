@@ -1,0 +1,107 @@
+/* Global styles */
+body {
+    
+ background-image: url('https://wallpapercave.com/wp/wp11965297.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center 200px; /* Position the background image 200px from the top */
+            margin: 0;
+            padding: 0;
+            color: white;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+
+/* Content wrapper */
+#content {
+    flex: 1;  /* Allows the content area to expand and fill space */
+    display: flex;
+    justify-content: center;  /* Center the form horizontally */
+    align-items: center;  /* Center the form vertically */
+    padding: 20px;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 20px;  /* Decreased padding for a smaller form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;  /* Decreased maximum width for the form */
+    width: 100%;  /* Set width to 100% within the max-width */
+    margin: 0 auto;  /* Center the form horizontally */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Message styling */
+#messages p {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;  /* Push footer to the bottom */
+}
+
+/* Media query to handle smaller screen sizes */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;  /* Allow form to take up 90% of the width on smaller screens */
+        padding: 10px;  /* Adjust padding for smaller screens */
+    }
+}

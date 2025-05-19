@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Vehicle container styling */
+.vehicle {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Styling the image and content */
+.vehicle img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.vehicle p {
+    margin: 10px 0;
+}
+
+/* Button row */
+.vehicle .button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.vehicle .button-row form {
+    margin: 0; /* Reset margin for forms inside flex container */
+    display: flex;
+    align-items: center;
+}
+
+.vehicle form input[type="number"] {
+    padding: 5px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+/* Common button styling */
+.vehicle form input[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    min-width: 150px;
+}
+
+/* Update button styling */
+.vehicle form input.update-button {
+    background-color: #28a745;
+}
+
+.vehicle form input.update-button:hover {
+    background-color: #218838;
+}
+
+/* Remove button styling */
+.vehicle form input.remove-button {
+    background-color: #dc3545;
+}
+
+.vehicle form input.remove-button:hover {
+    background-color: #c82333;
+}
+
+/* Ensure two vehicles per row */
+@media (min-width: 768px) {
+    .vehicle {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .vehicle:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+/* Single column layout for small screens */
+@media (max-width: 767px) {
+    .vehicle {
+        width: 100%;
+        margin-right: 0;
+    }
+}
